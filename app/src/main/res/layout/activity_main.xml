@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PROFILE"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="Perusahaan"
+                        android:layout_marginTop="5dp"
+                        app:boxStrokeWidth="2dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        app:counterEnabled="false"
+                        app:boxCornerRadiusBottomEnd="5dp"
+                        app:boxCornerRadiusBottomStart="5dp"
+                        app:boxCornerRadiusTopEnd="5dp"
+                        app:boxCornerRadiusTopStart="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:boxStrokeColor="@android:color/black"
+                        android:id="@+id/perusahaan"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:textSize="15sp"
+                            android:padding="20dp"
+                            android:inputType="textMultiLine"
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="Pencetus Ide"
+                        app:endIconMode="clear_text"
+                        android:layout_marginTop="5dp"
+                        app:boxStrokeWidth="2dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        app:counterEnabled="false"
+                        app:boxCornerRadiusBottomEnd="5dp"
+                        app:boxCornerRadiusBottomStart="5dp"
+                        app:boxCornerRadiusTopEnd="5dp"
+                        app:boxCornerRadiusTopStart="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:boxStrokeColor="@android:color/black"
+                        android:id="@+id/pencetusIde"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:textSize="15sp"
+                            android:padding="20dp"
+                            android:inputType="textMultiLine"
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="Anggota 1"
+                        android:layout_marginTop="5dp"
+                        app:boxStrokeWidth="2dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        app:counterEnabled="false"
+                        app:boxCornerRadiusBottomEnd="5dp"
+                        app:boxCornerRadiusBottomStart="5dp"
+                        app:boxCornerRadiusTopEnd="5dp"
+                        app:boxCornerRadiusTopStart="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:boxStrokeColor="@android:color/black"
+                        android:id="@+id/anggota_one"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:textSize="15sp"
+                            android:padding="20dp"
+                            android:inputType="textMultiLine"
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="Anggota 2"
+                        android:layout_marginTop="5dp"
+                        app:boxStrokeWidth="2dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        app:counterEnabled="false"
+                        app:boxCornerRadiusBottomEnd="5dp"
+                        app:boxCornerRadiusBottomStart="5dp"
+                        app:boxCornerRadiusTopEnd="5dp"
+                        app:boxCornerRadiusTopStart="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:boxStrokeColor="@android:color/black"
+                        android:id="@+id/anggota_two"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:textSize="15sp"
+                            android:padding="20dp"
+                            android:inputType="textMultiLine"
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="Judul"
+                        android:layout_marginTop="5dp"
+                        app:boxStrokeWidth="2dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        app:counterEnabled="false"
+                        app:boxCornerRadiusBottomEnd="5dp"
+                        app:boxCornerRadiusBottomStart="5dp"
+                        app:boxCornerRadiusTopEnd="5dp"
+                        app:boxCornerRadiusTopStart="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:boxStrokeColor="@android:color/black"
+                        android:id="@+id/judul"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:textSize="15sp"
+                            android:padding="20dp"
+                            android:inputType="textMultiLine"
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="Departemen"
+                        android:layout_marginTop="5dp"
+                        app:boxStrokeWidth="2dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        app:counterEnabled="false"
+                        app:boxCornerRadiusBottomEnd="5dp"
+                        app:boxCornerRadiusBottomStart="5dp"
+                        app:boxCornerRadiusTopEnd="5dp"
+                        app:boxCornerRadiusTopStart="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:boxStrokeColor="@android:color/black"
+                        android:id="@+id/departemen"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:textSize="15sp"
+                            android:padding="20dp"
+                            android:inputType="textMultiLine"
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="Bagian"
+                        android:layout_marginTop="5dp"
+                        app:boxStrokeWidth="2dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        app:counterEnabled="false"
+                        app:boxCornerRadiusBottomEnd="5dp"
+                        app:boxCornerRadiusBottomStart="5dp"
+                        app:boxCornerRadiusTopEnd="5dp"
+                        app:boxCornerRadiusTopStart="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:boxStrokeColor="@android:color/black"
+                        android:id="@+id/bagian"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:textSize="15sp"
+                            android:padding="20dp"
+                            android:inputType="textMultiLine"
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="No Registrasi"
+                        android:layout_marginTop="5dp"
+                        app:boxStrokeWidth="2dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        app:counterEnabled="false"
+                        app:boxCornerRadiusBottomEnd="5dp"
+                        app:boxCornerRadiusBottomStart="5dp"
+                        app:boxCornerRadiusTopEnd="5dp"
+                        app:boxCornerRadiusTopStart="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:boxStrokeColor="@android:color/black"
+                        android:id="@+id/no_registrasi"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:textSize="15sp"
+                            android:inputType="textMultiLine"
+                            android:padding="20dp"
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PLAN"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@android:color/black"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Latar Belakang"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="Uraian Masalah"
+                        android:layout_marginTop="5dp"
+                        app:boxStrokeWidth="2dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        app:counterEnabled="false"
+                        app:boxCornerRadiusBottomEnd="5dp"
+                        app:boxCornerRadiusBottomStart="5dp"
+                        app:boxCornerRadiusTopEnd="5dp"
+                        app:boxCornerRadiusTopStart="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:boxStrokeColor="@android:color/black"
+                        android:id="@+id/uraianMasalah"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:textSize="15sp"
+                            android:padding="20dp"
+                            android:inputType="textMultiLine"
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="Standard Seharusnya"
+                        android:layout_marginTop="5dp"
+                        app:boxStrokeWidth="2dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        app:counterEnabled="false"
+                        app:boxCornerRadiusBottomEnd="5dp"
+                        app:boxCornerRadiusBottomStart="5dp"
+                        app:boxCornerRadiusTopEnd="5dp"
+                        app:boxCornerRadiusTopStart="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:boxStrokeColor="@android:color/black"
+                        android:id="@+id/standard_seharusnya"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:textSize="15sp"
+                            android:padding="20dp"
+                            android:inputType="textMultiLine"
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="Pemborosan Biaya"
+                        android:layout_marginTop="5dp"
+                        app:boxStrokeWidth="2dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        app:counterEnabled="false"
+                        app:boxCornerRadiusBottomEnd="5dp"
+                        app:boxCornerRadiusBottomStart="5dp"
+                        app:boxCornerRadiusTopEnd="5dp"
+                        app:boxCornerRadiusTopStart="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:boxStrokeColor="@android:color/black"
+                        android:id="@+id/pemborosan"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:textSize="15sp"
+                            android:padding="20dp"
+                            android:inputType="textMultiLine"
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@android:color/black"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Usulan Perbaikan"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="Ide"
+                        android:layout_marginTop="5dp"
+                        app:boxStrokeWidth="2dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        app:counterEnabled="false"
+                        app:boxCornerRadiusBottomEnd="5dp"
+                        app:boxCornerRadiusBottomStart="5dp"
+                        app:boxCornerRadiusTopEnd="5dp"
+                        app:boxCornerRadiusTopStart="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:boxStrokeColor="@android:color/black"
+                        android:id="@+id/ide"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:textSize="15sp"
+                            android:padding="20dp"
+                            android:inputType="textMultiLine"
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DO"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aktivitas Perbaikan"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="Apa yang dilakukan"
+                        android:layout_marginTop="5dp"
+                        app:boxStrokeWidth="2dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        app:counterEnabled="false"
+                        app:boxCornerRadiusBottomEnd="5dp"
+                        app:boxCornerRadiusBottomStart="5dp"
+                        app:boxCornerRadiusTopEnd="5dp"
+                        app:boxCornerRadiusTopStart="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:boxStrokeColor="@android:color/black"
+                        android:id="@+id/apaYangDilakukan"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:textSize="15sp"
+                            android:padding="20dp"
+                            android:inputType="textMultiLine"
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="Kondisi Sebelum"
+                        android:layout_marginTop="5dp"
+                        app:boxStrokeWidth="2dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        app:counterEnabled="false"
+                        app:boxCornerRadiusBottomEnd="5dp"
+                        app:boxCornerRadiusBottomStart="5dp"
+                        app:boxCornerRadiusTopEnd="5dp"
+                        app:boxCornerRadiusTopStart="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:boxStrokeColor="@android:color/black"
+                        android:id="@+id/kondisi_sebelum"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:textSize="15sp"
+                            android:padding="20dp"
+                            android:inputType="textMultiLine"
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="Kondisi Sesudah"
+                        android:layout_marginTop="5dp"
+                        app:boxStrokeWidth="2dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        app:counterEnabled="false"
+                        app:boxCornerRadiusBottomEnd="5dp"
+                        app:boxCornerRadiusBottomStart="5dp"
+                        app:boxCornerRadiusTopEnd="5dp"
+                        app:boxCornerRadiusTopStart="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:boxStrokeColor="@android:color/black"
+                        android:id="@+id/kondisi_sesudah"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:textSize="15sp"
+                            android:padding="20dp"
+                            android:inputType="textMultiLine"
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="Tanggal Implementasi Ide"
+                        android:layout_marginTop="5dp"
+                        app:boxStrokeWidth="2dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        app:counterEnabled="false"
+                        app:boxCornerRadiusBottomEnd="5dp"
+                        app:boxCornerRadiusBottomStart="5dp"
+                        app:boxCornerRadiusTopEnd="5dp"
+                        app:boxCornerRadiusTopStart="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:boxStrokeColor="@android:color/black"
+                        android:id="@+id/tglImplementasiIde"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:textSize="15sp"
+                            android:padding="15dp"
+                            android:id="@+id/editTanggal"
+                            android:inputType="textMultiLine"
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHECK"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uraian Biaya Improvement Dan Benefit"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="Biaya Improvement"
+                        android:layout_marginTop="5dp"
+                        app:boxStrokeWidth="2dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        app:counterEnabled="false"
+                        app:boxCornerRadiusBottomEnd="5dp"
+                        app:boxCornerRadiusBottomStart="5dp"
+                        app:boxCornerRadiusTopEnd="5dp"
+                        app:boxCornerRadiusTopStart="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:boxStrokeColor="@android:color/black"
+                        android:id="@+id/biaya_imrpovement"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:textSize="15sp"
+                            android:padding="20dp"
+                            android:inputType="textMultiLine"
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="Benefit"
+                        android:layout_marginTop="5dp"
+                        app:boxStrokeWidth="2dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        app:counterEnabled="false"
+                        app:boxCornerRadiusBottomEnd="5dp"
+                        app:boxCornerRadiusBottomStart="5dp"
+                        app:boxCornerRadiusTopEnd="5dp"
+                        app:boxCornerRadiusTopStart="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:boxStrokeColor="@android:color/black"
+                        android:id="@+id/benefit"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:textSize="15sp"
+                            android:padding="20dp"
+                            android:inputType="textMultiLine"
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACT"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bentuk Standarisasi Yang Dibuat"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="Standart"
+                        android:layout_marginTop="5dp"
+                        app:boxStrokeWidth="2dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        app:counterEnabled="false"
+                        app:boxCornerRadiusBottomEnd="5dp"
+                        app:boxCornerRadiusBottomStart="5dp"
+                        app:boxCornerRadiusTopEnd="5dp"
+                        app:boxCornerRadiusTopStart="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:boxStrokeColor="@android:color/black"
+                        android:id="@+id/standart"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:textSize="15sp"
+                            android:padding="15dp"
+                            android:inputType="textMultiLine"
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:text="Upload Gambar Dokumentasi" />
+
+                <ImageView
+                    android:id="@+id/gambarSesudah"
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:src="@drawable/ic_baseline_error_outline_24"
+                    android:contentDescription="Gambar Sesudah" />
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageButton
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_camera_alt_24"
+                        android:id="@+id/cameraSesudahButton"
+                        android:contentDescription="Camera" />
+
+                    <ImageButton
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_photo_24"
+                        android:id="@+id/storageGallerySesudahButton"
+                        android:contentDescription="Gallery" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                app:cornerRadius="20dp"
+                android:id="@+id/cetakPdf"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Cetak PDF" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                app:cornerRadius="20dp"
+                android:id="@+id/sharePdf"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Share PDF" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
